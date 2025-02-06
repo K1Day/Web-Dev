@@ -1,0 +1,53 @@
+<html>
+    <body>
+        <script>
+            //Task 1
+            function filterRange(arr, a, b) {
+                return arr.filter(item => (a <= item && item <= b));
+            }
+            let arr = [5, 3, 8, 1];
+            let filtered = filterRange(arr, 1, 4);
+            alert( filtered ); //3,1
+            alert( arr ); //5,3,8,1
+
+            //Task 2
+            let john = { name: "John", age: 25 };
+            let pete = { name: "Pete", age: 30 };
+            let mary = { name: "Mary", age: 28 };
+            let users = [ john, pete, mary ];
+            let names = users.map(item => item.name);
+            alert( names ); // John, Pete, Mary
+
+            //Task 3
+            function sortByAge(ar) {
+                ar.sort((a, b) => a.age - b.age);
+            }
+            let joh = { name: "John", age: 25 };
+            let pet = { name: "Pete", age: 30 };
+            let mar = { name: "Mary", age: 28 };
+            let ar = [ pete, john, mary ];
+            sortByAge(ar);
+            alert(ar[0].name); // John
+            alert(ar[1].name); // Mary
+            alert(ar[2].name); // Pete
+
+            //Task 4
+            function shuffle(array) {
+                array.sort(() => Math.random() - 0.5);
+            }
+            let a = [1, 2, 3];
+            shuffle(a);
+            alert(a);
+
+            //Task 5
+            function getAverageAge(users) {
+                return users.reduce((prev, user) => prev + user.age, 0) / users.length;
+            }
+            let jo = { name: "John", age: 25 };
+            let pe = { name: "Pete", age: 30 };
+            let ma= { name: "Mary", age: 29 };
+            let m = [ john, pete, mary ];
+            alert( getAverageAge(m) ); // 28
+        </script>
+    </body>
+</html>
