@@ -1,0 +1,18 @@
+<div class="z">
+    <a href="https://main.kaspi.kz/"><img src="/assets/images/kaspi.svg" id="kaspi"></a>
+    </div>
+<div class="product-list">
+  <div class="product-card" *ngFor="let product of products">
+    <img [src]="product.image" [alt]="product.name"
+    [style.width.px]="product.width" [style.height.px]="product.height">
+    <h3>{{ product.name }}</h3>
+    <p>{{ product.description }}</p>
+    <p>⭐ Rating: {{ product.rating }}</p>
+    <a [href]="product.link" target="_blank">View on Kaspi.kz</a>
+    
+    <div class="share-buttons">
+      <button class="w" (click)="shareOnWhatsApp(product.link)"> WhatsApp</button>
+      <button class="t" (click)="shareOnTelegram(product.link)"> Telegram</button>
+    </div>
+  </div>
+</div>
