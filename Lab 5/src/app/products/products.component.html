@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<div class="z">
+  <a href="https://main.kaspi.kz/"><img src="/assets/images/kaspi.svg" id="kaspi"></a>
+</div>
+
+<div class="category-selector">
+  <button *ngFor="let category of categories" (click)="onCategoryChange(category)">
+    {{ category === 'all' ? 'Все' : category }}
+  </button>
+</div>
+
+<app-product-list
+  [products]="filteredProducts"
+  (like)="onLike($event)"
+  (shareWhatsApp)="shareOnWhatsApp($event)"
+  (shareTelegram)="shareOnTelegram($event)"
+></app-product-list>
