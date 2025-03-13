@@ -1,0 +1,12 @@
+<h1>Albums</h1>
+<div *ngIf="isLoading">Loading...</div>
+<div *ngIf="!isLoading">
+  <input [(ngModel)]="newAlbumTitle" placeholder="New album title" />
+  <button (click)="createAlbum()">Create Album</button>
+  <ul>
+    <li *ngFor="let album of albums" (click)="onSelect(album.id)">
+      {{ album.title }}
+      <button (click)="deleteAlbum(album.id)">Delete</button>
+    </li>
+  </ul>
+</div>
