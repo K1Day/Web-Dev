@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<style>
+.tab {
+  border: 1px solid white;
+background-color: #96D4D4;
+  border-collapse: collapse; <!--collapse Граница между ячейками будет одна, слияние произойдёт по правилам стилей.-->
+
+
+</style>
+<body>
+
+<h2>A basic HTML table</h2>
+
+<table class="tab" style="width:100%">
+<caption>Caption</caption>
+  <tr class="trr">
+    <th class="tab" style="width:70%">Company</th>
+    <th class="tab">Contact</th>
+    <th class="tab">Country</th>
+  </tr>
+  <trclass="trr">
+    <td class="tab">Alfreds Futterkiste</td>
+    <td class="tab">Maria Anders</td>
+    <td class="tab">Germany</td>
+  </tr>
+  <tr class="trr" style="height:200px">
+    <td class="tab">Centro comercial Moctezuma</td>
+    <td class="tab">Francisco Chang</td>
+    <td class="tab">Mexico</td>
+  </tr>
+</table>
+
+<hr>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+border-spacing: 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+border-style:dashed;
+}
+th, td {
+  padding: 15px;
+}
+</style>
+</head>
+<body>
+
+<h1>The col element</h1>
+
+<table>
+  <colgroup>
+    <col span="2" style="background-color:red">
+    <col style="background-color:yellow">
+<!--Тег <col> полезен для применения стилей ко всем столбцам, вместо повторения стилей для каждой ячейки, для каждой строки.-->
+    
+  </colgroup>
+  <tr>
+    <th>ISBN</th>
+    <th>Title</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>3476896</td>
+    <td>My first HTML</td>
+    <td>$53</td>
+  </tr>
+  <tr>
+    <td>5869207</td>
+    <td>My first CSS</td>
+    <td>$49</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+<p>To understand the example better, we have added borders to the table.</p>
+
+</body>
+</html>
+
+<hr>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.rowcol{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Cell that spans two rows</h2>
+<p>To make a cell span more than one row, use the rowspan attribute.</p>
+
+<table class="rowcol" style="width:100%">
+  <tr>
+    <th class="rowcol">Name</th>
+    <td class="rowcol">Jill</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Phone</th>
+    <td class="rowcol">555-1234</td>
+  </tr>
+  <tr>
+    <td class="rowcol">555-8745</td>
+  </tr>
+</table>
+</body>
+</html>
+
+
+<hr>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.child {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.hd {
+  text-align: left;
+  padding: 8px;
+}
+
+.even:nth-child(even) {
+  background-color: #D6EEEE;
+}
+</style>
+</head>
+<body>
+
+<h2>Zebra Striped Table</h2>
+<p>For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows:</p>
+
+<table class="child">
+  <tr class="even">
+  <th class="hd">First Name</th>
+  <th class="hd">Last Name</th>
+  <th class="hd">Points</th>
+  </tr>
+  <tr class="even">
+  <td class="hd">Peter</td>
+  <td class="hd">Griffin</td>
+  <td class="hd">$100</td>
+  </tr>
+  <tr class="even">
+  <td class="hd">Lois</td>
+  <td class="hd">Griffin</td>
+  <td class="hd">$150</td>
+  </tr>
+  <tr class="even">
+  <td class="hd">Joe</td>
+  <td class="hd">Swanson</td>
+  <td>$300</td>
+  </tr>
+  <tr class="even">
+  <td class="hd">Cleveland</td>
+  <td class="hd">Brown</td>
+  <td class="hd">$250</td>
+  </tr>
+</table>
+
+</body>
+</html>
+

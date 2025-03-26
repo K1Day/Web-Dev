@@ -1,0 +1,172 @@
+#telephone{
+    position: relative;
+}
+
+#home{
+    z-index:-1;
+}
+#pic1{
+    
+    position: absolute; 
+    top: 4%; 
+    left: 34%;
+    z-index: 2;
+}
+#w{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 850px;
+    margin: auto;
+    padding: 40px 0 20px;
+}
+.container {
+    width: 330px;
+    background-color: #fff;
+    text-align:center;
+    border-radius: 0px;
+    padding: 15px 10px 25px;
+    border: 1px solid rgb(219, 219, 219);
+    
+    
+}
+
+.input-block{
+    margin-top:35px;
+   
+    text-align:center;
+    
+    
+}
+input {
+    font-family:Helvetica, Arial, sans-serif;
+    width: 75%;
+    padding: 13px;
+    margin-top: 1px;
+    margin-bottom:5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.first-button{
+    font-family:'Segoe UI', Helvetica, Arial, sans-serif;
+    width: 85%;
+    padding:5px;
+    color:white;
+    background-color:#53bdeb;
+    margin:7px;
+    border-radius: 8px;
+    cursor:pointer;
+    font-size: 16px;
+    margin-bottom:10px;
+    border:none;
+}
+
+
+#linkButton{
+    text-decoration:none;
+    font-family:Helvetica, Arial, sans-serif;
+    font-size:11px;
+    color:blue;
+}
+#linkButton:hover{
+    text-decoration:underline;
+}
+
+.line {
+     width:120px;
+    margin-top:10px;
+    margin-bottom:8px;
+    border-bottom: 1px solid #dadde1
+}
+.line-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.line-wrapper span {
+    padding: 0 15px;
+    font-size: 14px;
+    color: #888;
+}
+.container-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 10px; 
+}
+.second-container{
+    position:relative;
+    margin-top: 1%;
+    width: 330px;
+    background-color: #fff;
+    text-align:center;
+    border-radius: 0px;
+    padding: 1px 10px 4px;
+    border: 1px solid rgb(219, 219, 219);
+    font-family:'Segoe UI', Helvetica, Arial, sans-serif;
+
+}
+#login{
+    color:rgb(0, 149, 246);
+    text-align: center;
+    font-family:'Segoe UI', Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    
+}
+#login:hover{
+    color:rgb(0, 46, 77);;
+}
+
+#signUp{
+    text-decoration: none;
+    color:rgb(0, 149, 246);
+    
+}
+.links{
+    margin-top: 20px;
+}
+#forgot{
+    color:rgb(0, 0, 0);
+    text-align: center;
+    font-family:'Segoe UI', Helvetica, Arial, sans-serif;
+    text-decoration: none;
+}
+
+#app{
+    margin-top:2px;
+    font-family:'Segoe UI', Helvetica, Arial, sans-serif;
+    
+}
+.images-wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+#google{
+    width:170px;
+}
+#mic{
+    width:140px;
+}
+.flex-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    list-style: none; 
+}
+
+
+.flex-list li a {
+    text-decoration: none; 
+    color: #737373;
+    padding: 2px 5px;
+    font-size: 14px;
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+
+.flex-list li a:hover {
+    text-decoration: underline;
+}

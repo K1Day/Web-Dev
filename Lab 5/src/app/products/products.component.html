@@ -1,0 +1,14 @@
+
+<div class="z">
+  <a href="https://main.kaspi.kz/"><img src="/assets/images/kaspi.svg" id="kaspi"></a>
+</div>
+
+<h2>Товары категории: {{ selectedCategory === 'all' ? 'Все' : selectedCategory }}</h2>
+<button (click)="goBack()">Назад к выбору категорий</button>
+<app-product-list
+[products]="filteredProducts"
+(like)="onLike($event)"
+
+(shareWhatsApp)="shareOnWhatsApp($event)"
+(shareTelegram)="shareOnTelegram($event)"
+></app-product-list>

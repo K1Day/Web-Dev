@@ -1,0 +1,75 @@
+<html>
+    <body>
+        <script>
+            let user = {
+                name: "John",
+                age: 30
+            };
+            let key = prompt("What do you want to know about the user?", "name");
+                alert( user[key] );
+
+            let a = { age: 30 };
+            let k = "age";
+            alert( k in user );
+
+            let u = {
+                name: "John",
+                age: 30,
+                isAdmin: true
+            };
+
+            for (let key in user) {
+                alert( key );
+                alert( user[key] ); 
+            }
+
+            //Task 1
+            let dayana={}
+                dayana.name = "Dayana";
+                dayana.surname = "Kaldybayeva";
+                dayana.name = "Milana";
+                delete dayana.name;
+            
+            //Task 2
+            function isEmpty(something){
+                for(let key in something){
+                    return false;
+                }
+                return true;
+            }
+            let schedule = {};
+            alert(isEmpty(schedule));
+            schedule["8:30"] = "get UUPPP"
+            alert(isEmpty(schedule));
+
+            //Task 3
+            
+            
+            let salaries={
+                John: 100,
+                Ann: 160,
+                Pete:130
+            }
+            let sum = 0;
+                for(let key in salaries){
+                    sum += salaries[key];
+                }
+            alert(sum);
+
+            //Task 3
+            function multiplyNumeric(obj){
+                for(let key in obj){
+                    if(typeof obj[key] =='number'){
+                        alert(obj[key] *= 2);
+                    }
+                }
+            }
+            let menu = {
+                width: 200,
+                height: 300,
+                title: "My menu"
+            }
+            multiplyNumeric(menu)
+        </script>
+    </body>
+</html>
