@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <script>
+            function ask(question,yes,no){
+                if(confitm(question))yes();
+                else no();
+             
+            }
+            ask(
+                    "Do you agree?",
+                    () =>alert("You agreed."),
+                    ()=>alert("You agreed.")
+                );
+        </script>
+    </body>
+</html>
