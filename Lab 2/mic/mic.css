@@ -1,0 +1,194 @@
+body{
+    background-color: white;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+    background-color: #f8f8f8;
+}
+
+.first, .second {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.first li a, .second li a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.first li a:hover, .second li a:hover {
+    text-decoration: underline;
+}
+.first li a:focus, .second li a:focus{
+    border:1px dashed black;
+    padding:5px;
+}
+
+#pic1 {
+    width: 108px;
+    height: auto;
+    margin-top: -3px;
+}
+
+.learn {
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 25px 420px;
+    background-color: #0067A1;
+    
+
+}
+.learn a{
+    color: #fff;
+    text-decoration: none;
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+.learn a:hover{
+    text-decoration: underline;
+}
+.learn a:focus{
+    border:3px dotted white;
+}
+.back{
+    position: relative;
+}
+#pic2{
+    width:1505px;
+    z-index:-1;
+}
+.back-text{
+    position: absolute;
+    top: 25%;
+    left: 7%;
+    color: white;
+    font-weight: bold;
+    width: 30%;
+    color:black;
+}
+.back-text p{
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+}
+.back-text h1{
+    font-size: 2.5rem;
+}
+
+.b{
+    position: absolute;
+    top: 63%;
+    left: 7%;
+    font-weight: bold;
+    
+}
+
+.first-button{
+    border: 1px solid #0067b8;
+    color:white;
+    text-decoration: none;
+    padding:10px;
+    background-color:#0067b8;
+    font-family:"Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.first-button:hover{
+    background-color: #005a9e;
+    border: 1px solid #005a9e;
+    box-shadow: 1px 4px 37px -1px rgba(34, 60, 80, 0.2);
+}
+.first-button:focus{
+    border:3px dotted white;
+}
+.icons{
+    left:45%;
+    margin-top: 10px;
+    position:absolute;
+
+}
+.icons svg{
+    margin-right: 20px;
+}
+
+.devices svg{
+    margin-right: 155px;
+}
+.devices{
+    left: 15%;
+    margin-top: 90px;
+    position:absolute;
+
+}
+
+.text {
+    left: 12%;
+    margin-top: 150px;
+    position:absolute;
+}
+
+.text a{
+    margin-right: 12px;
+    font-size:18.5px;
+    color:#0067b8;
+    
+}
+
+.cards{
+    box-sizing: border-box;
+    margin-top: 240px;
+    display: flex;
+    gap: 20px;
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    width:60px;
+    margin-left: 110px;
+    font-family:"Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.cards h1{
+    font-size: 1.5em;
+}
+.card1{
+    box-shadow: 1px 4px 40px -1px rgba(34, 60, 80, 0.2);
+}
+.card1 p, .card1 h1{
+    padding-left:20px;
+    padding-right:20px;
+}
+.card2{
+    box-shadow: 1px 4px 40px -1px rgba(34, 60, 80, 0.2);
+}
+.card2 p, .card2 h1{
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.card3{
+    box-shadow: 1px 4px 40px -1px rgba(34, 60, 80, 0.2);
+}
+.card3 p, .card3 h1{
+    padding-left:20px;
+    padding-right:20px;
+}
+.card4{
+    box-shadow: 1px 4px 40px -1px rgba(34, 60, 80, 0.2);
+}
+.card4 p, .card4 h1{
+    padding-left:20px;
+    padding-right:20px;
+    padding-bottom: 20px;
+}
+
+.b1{
+    margin-left: 10px;
+    margin-top:2px;
+    cursor: pointer;
+}

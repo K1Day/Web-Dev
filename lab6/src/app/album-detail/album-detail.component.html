@@ -1,0 +1,19 @@
+<div *ngIf="album">
+    <h1>Album Details</h1>
+    <p><strong>Title:</strong> {{ album.title }}</p>
+  
+    <!-- Edit Album Title -->
+    <div>
+      <label for="albumTitle">Edit Title:</label>
+      <input id="albumTitle" [(ngModel)]="album.title" />
+      <button (click)="save()">Save</button>
+    </div>
+  
+    <!-- Buttons -->
+    <button (click)="goBack()">Back</button>
+    <button (click)="goToPhotos()">Photos</button>
+  </div>
+  
+  <div *ngIf="!album">
+    <p>Loading album details...</p>
+  </div>
